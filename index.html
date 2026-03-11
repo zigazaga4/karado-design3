@@ -192,6 +192,58 @@ footer{background:#2d2d2d;color:rgba(255,255,255,.4);padding:70px 5% 30px}
 .hero-btns{flex-direction:column;align-items:center}
 .about-badge{display:none}
 }
+
+/* === PREMIUM UPGRADES D3 === */
+/* Hero animated glow */
+.hero-deco-3 { animation: pulse-glow 6s ease-in-out infinite !important; }
+@keyframes pulse-glow { 0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)} 50%{opacity:1;transform:translate(-50%,-50%) scale(1.15)} }
+
+/* Button shimmer */
+.btn-dark { background: linear-gradient(135deg,#2d2d2d,#1a1a1a) !important; position:relative; overflow:hidden; }
+.btn-dark::after { content:''; position:absolute; top:-50%; left:-60%; width:200%; height:200%; background:linear-gradient(90deg,transparent,rgba(255,255,255,.08),transparent); transform:skewX(-20deg); transition:left .6s; }
+.btn-dark:hover::after { left:60%; }
+.btn-dark:hover { background: linear-gradient(135deg,#b8860b,#d4a017) !important; }
+
+/* Service cards — gold bottom border on hover */
+.s-card { box-shadow: 0 2px 20px rgba(0,0,0,.03) !important; transition: all .5s cubic-bezier(.23,1,.32,1) !important; }
+.s-card:hover { box-shadow: 0 25px 60px rgba(184,134,11,.07) !important; }
+
+/* Stats numbers */
+.s-num { filter: drop-shadow(0 4px 20px rgba(184,134,11,.2)); }
+
+/* Testimonials section deeper */
+.testimonials { background: linear-gradient(145deg, #252018 0%, #2d2d2d 50%, #201c14 100%) !important; }
+.test-card:hover { background: rgba(255,255,255,.08) !important; border-color: rgba(184,134,11,.15) !important; }
+
+/* Timeline dots glow */
+.proc-num { box-shadow: 0 0 0 6px rgba(184,134,11,.06); transition: all .4s !important; }
+.proc-step:hover .proc-num { box-shadow: 0 0 0 8px rgba(184,134,11,.1), 0 8px 30px rgba(184,134,11,.2) !important; }
+
+/* Gallery items */
+.gallery-item { transition: all .5s cubic-bezier(.23,1,.32,1) !important; }
+.gallery-item:hover { box-shadow: 0 20px 50px rgba(184,134,11,.1) !important; border-color: rgba(184,134,11,.25) !important; }
+
+/* FAQ gold plus */
+.faq-q::after { color: #b8860b; }
+.faq-item.open { border-color: rgba(184,134,11,.2) !important; box-shadow: 0 8px 30px rgba(184,134,11,.06) !important; }
+
+/* About badge pulse */
+.about-badge { animation: badgePulse 3s ease-in-out infinite; }
+@keyframes badgePulse { 0%,100%{box-shadow:0 10px 40px rgba(184,134,11,.3)} 50%{box-shadow:0 10px 60px rgba(184,134,11,.5)} }
+
+/* Footer */
+footer::before { content:''; display:block; height:1px; background:linear-gradient(90deg,transparent,rgba(184,134,11,.3),transparent); }
+
+/* Hero ornament gold glow */
+.hero-ornament { color: #b8860b; text-shadow: 0 0 30px rgba(184,134,11,.3); }
+
+/* Divider diamond pulse */
+.div-diamond { animation: diamondPulse 2s ease-in-out infinite; }
+@keyframes diamondPulse { 0%,100%{box-shadow:0 0 0 0 rgba(184,134,11,.3)} 50%{box-shadow:0 0 0 6px rgba(184,134,11,.08)} }
+
+/* Nav gold CTA */
+.nav-cta:hover { background: #b8860b !important; border-color: #b8860b !important; }
+
 </style>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
@@ -377,6 +429,11 @@ document.querySelectorAll('.faq-q').forEach(function(q){q.addEventListener('clic
 var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}})},{threshold:0.1});
 document.querySelectorAll('.s-card,.stat,.test-card,.proc-step,.gallery-item,.gallery-wide,.faq-item,.ci-item').forEach(function(el){el.style.opacity='0';el.style.transform='translateY(30px)';el.style.transition='all .6s ease';obs.observe(el)});
 lucide.createIcons();
+
+document.querySelectorAll('.s-card').forEach((el,i)=>{ el.style.transitionDelay=(i*0.07)+'s'; });
+document.querySelectorAll('.test-card').forEach((el,i)=>{ el.style.transitionDelay=(i*0.1)+'s'; });
+document.querySelectorAll('.gallery-item,.gallery-wide').forEach((el,i)=>{ el.style.transitionDelay=(i*0.06)+'s'; });
+
 </script>
 </body>
 </html>
