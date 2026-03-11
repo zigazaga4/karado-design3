@@ -73,7 +73,7 @@ nav.scrolled{background:rgba(255,251,245,.97);backdrop-filter:blur(20px);box-sha
 .about{padding:100px 5%;background:#fff}
 .about-flex{display:flex;gap:80px;align-items:center;max-width:1100px;margin:0 auto}
 .about-visual{flex:0 0 480px;position:relative}
-.about-img{width:100%;height:520px;border-radius:24px;background:linear-gradient(135deg,#faf5ec,#f0ebe0);display:flex;align-items:center;justify-content:center;font-size:180px;position:relative;border:1px solid #ede5d8}
+.about-img{width:100%;height:520px;border-radius:24px;background:linear-gradient(135deg,#faf5ec,#f0ebe0);display:flex;align-items:center;justify-content:center;font-size:36px;position:relative;border:1px solid #ede5d8}
 .about-badge{position:absolute;bottom:-20px;right:-20px;width:140px;height:140px;border-radius:50%;background:#b8860b;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 40px rgba(184,134,11,.3)}
 .about-badge .ab-inner{text-align:center;color:#fff}
 .about-badge .ab-num{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:700}
@@ -193,6 +193,7 @@ footer{background:#2d2d2d;color:rgba(255,255,255,.4);padding:70px 5% 30px}
 .about-badge{display:none}
 }
 </style>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
@@ -246,19 +247,19 @@ footer{background:#2d2d2d;color:rgba(255,255,255,.4);padding:70px 5% 30px}
     <p>Tot ce ai nevoie pentru un zambet sanatos si frumos.</p>
   </div>
   <div class="s-grid">
-    <div class="s-card"><div class="s-icon">🪥</div><h3>Stomatologie Generala</h3><p>Consultatii detaliate, detartraj profesional, plombe estetice compozite si tratamente de canal cu microscop. Preventie si interventie la cel mai inalt standard.</p></div>
-    <div class="s-card"><div class="s-icon">💎</div><h3>Estetica Dentara</h3><p>Fatete ceramice E-max, albire profesionala cu LED, bonding cosmetic. Rezultate naturale care complimenteaza trasaturile tale unice.</p></div>
-    <div class="s-card"><div class="s-icon">🔩</div><h3>Implantologie</h3><p>Implanturi premium cu planificare digitala 3D, insertie ghidata si protezare imediata. Rata de succes peste 98%.</p></div>
-    <div class="s-card"><div class="s-icon">😁</div><h3>Ortodontie</h3><p>Clear aligners invizibili, aparate ceramice si metalice. Simulare 3D a rezultatului final — vezi cum vei arata inainte de a incepe.</p></div>
-    <div class="s-card"><div class="s-icon">👑</div><h3>Proteze & Coroane</h3><p>Coroane integral ceramice si zirconiu, punti pe implanturi. Restauram functionalitatea si estetica in armonie cu zambetul natural.</p></div>
-    <div class="s-card"><div class="s-icon">🏥</div><h3>Chirurgie Orala</h3><p>Extractii complexe, augmentari osoase, sinus lift. Cu anestezie moderna si protocol fara durere — recuperare rapida garantata.</p></div>
+    <div class="s-card"><div class="s-icon"><i data-lucide="scan-search" style="width:50px;height:50px"></i></div><h3>Stomatologie Generala</h3><p>Consultatii detaliate, detartraj profesional, plombe estetice compozite si tratamente de canal cu microscop. Preventie si interventie la cel mai inalt standard.</p></div>
+    <div class="s-card"><div class="s-icon"><i data-lucide="gem" style="width:36px;height:36px"></i></div><h3>Estetica Dentara</h3><p>Fatete ceramice E-max, albire profesionala cu LED, bonding cosmetic. Rezultate naturale care complimenteaza trasaturile tale unice.</p></div>
+    <div class="s-card"><div class="s-icon"><i data-lucide="wrench" style="width:36px;height:36px"></i></div><h3>Implantologie</h3><p>Implanturi premium cu planificare digitala 3D, insertie ghidata si protezare imediata. Rata de succes peste 98%.</p></div>
+    <div class="s-card"><div class="s-icon"><i data-lucide="smile" style="width:36px;height:36px"></i></div><h3>Ortodontie</h3><p>Clear aligners invizibili, aparate ceramice si metalice. Simulare 3D a rezultatului final — vezi cum vei arata inainte de a incepe.</p></div>
+    <div class="s-card"><div class="s-icon"><i data-lucide="crown" style="width:36px;height:36px"></i></div><h3>Proteze & Coroane</h3><p>Coroane integral ceramice si zirconiu, punti pe implanturi. Restauram functionalitatea si estetica in armonie cu zambetul natural.</p></div>
+    <div class="s-card"><div class="s-icon"><i data-lucide="hospital" style="width:36px;height:36px"></i></div><h3>Chirurgie Orala</h3><p>Extractii complexe, augmentari osoase, sinus lift. Cu anestezie moderna si protocol fara durere — recuperare rapida garantata.</p></div>
   </div>
 </section>
 
 <section class="about" id="despre">
   <div class="about-flex">
     <div class="about-visual">
-      <div class="about-img">🏥</div>
+      <div class="about-img"><i data-lucide="hospital" style="width:36px;height:36px"></i></div>
       <div class="about-badge"><div class="ab-inner"><div class="ab-num">10+</div><div class="ab-txt">Ani</div></div></div>
     </div>
     <div class="about-text">
@@ -296,9 +297,9 @@ footer{background:#2d2d2d;color:rgba(255,255,255,.4);padding:70px 5% 30px}
     <p>Cuvintele lor, nefiltrate.</p>
   </div>
   <div class="test-grid">
-    <div class="test-card"><div class="test-stars">★ ★ ★ ★ ★</div><blockquote>„Cea mai buna experienta la dentist. Caldura, profesionalism si rezultate impecabile. Nu ma mai duc nicaieri altundeva."</blockquote><div class="test-footer"><div class="test-av">👩</div><div><div class="test-name">Maria P.</div><div class="test-date">Pacienta din 2022</div></div></div></div>
-    <div class="test-card"><div class="test-stars">★ ★ ★ ★ ★</div><blockquote>„Am facut 4 implanturi si fatete — arata incredibil. Nu pot sa cred ca sunt ai mei. Echipa extraordinara."</blockquote><div class="test-footer"><div class="test-av">👨</div><div><div class="test-name">Andrei M.</div><div class="test-date">Pacient din 2023</div></div></div></div>
-    <div class="test-card"><div class="test-stars">★ ★ ★ ★ ★</div><blockquote>„Copiii mei se bucura cand mergem la Karado. Echipa e extraordinar de blanda si rabdatoare. Recomand din suflet."</blockquote><div class="test-footer"><div class="test-av">👩</div><div><div class="test-name">Elena D.</div><div class="test-date">Pacienta din 2021</div></div></div></div>
+    <div class="test-card"><div class="test-stars"><i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i> <i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i> <i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i> <i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i> <i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i></div><blockquote>„Cea mai buna experienta la dentist. Caldura, profesionalism si rezultate impecabile. Nu ma mai duc nicaieri altundeva."</blockquote><div class="test-footer"><div class="test-av"><i data-lucide="user" style="width:18px;height:18px"></i></div><div><div class="test-name">Maria P.</div><div class="test-date">Pacienta din 2022</div></div></div></div>
+    <div class="test-card"><div class="test-stars"><i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i> <i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i> <i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i> <i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i> <i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i></div><blockquote>„Am facut 4 implanturi si fatete — arata incredibil. Nu pot sa cred ca sunt ai mei. Echipa extraordinara."</blockquote><div class="test-footer"><div class="test-av"><i data-lucide="user" style="width:18px;height:18px"></i></div><div><div class="test-name">Andrei M.</div><div class="test-date">Pacient din 2023</div></div></div></div>
+    <div class="test-card"><div class="test-stars"><i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i> <i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i> <i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i> <i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i> <i data-lucide="star" style="width:14px;height:14px;fill:#b8860b;color:#b8860b"></i></div><blockquote>„Copiii mei se bucura cand mergem la Karado. Echipa e extraordinar de blanda si rabdatoare. Recomand din suflet."</blockquote><div class="test-footer"><div class="test-av"><i data-lucide="user" style="width:18px;height:18px"></i></div><div><div class="test-name">Elena D.</div><div class="test-date">Pacienta din 2021</div></div></div></div>
   </div>
 </section>
 
@@ -308,12 +309,12 @@ footer{background:#2d2d2d;color:rgba(255,255,255,.4);padding:70px 5% 30px}
     <h2>Clinica Noastra</h2>
   </div>
   <div class="gallery-grid">
-    <div class="gallery-item gi1">🦷</div>
-    <div class="gallery-item gi2">💎</div>
-    <div class="gallery-item gi3">😁</div>
-    <div class="gallery-item gi4">🪥</div>
-    <div class="gallery-wide gw1">🏥<p>Sala de Tratament Moderna</p></div>
-    <div class="gallery-wide gw2">✨<p>Zona de Receptie</p></div>
+    <div class="gallery-item gi1"><i data-lucide="heart-pulse" style="width:50px;height:50px"></i></div>
+    <div class="gallery-item gi2"><i data-lucide="gem" style="width:36px;height:36px"></i></div>
+    <div class="gallery-item gi3"><i data-lucide="smile" style="width:36px;height:36px"></i></div>
+    <div class="gallery-item gi4"><i data-lucide="scan-search" style="width:50px;height:50px"></i></div>
+    <div class="gallery-wide gw1"><i data-lucide="hospital" style="width:36px;height:36px"></i><p>Sala de Tratament Moderna</p></div>
+    <div class="gallery-wide gw2"><i data-lucide="sparkles" style="width:40px;height:40px"></i><p>Zona de Receptie</p></div>
   </div>
 </section>
 
@@ -344,10 +345,10 @@ footer{background:#2d2d2d;color:rgba(255,255,255,.4);padding:70px 5% 30px}
   <div class="contact-flex">
     <div class="contact-info">
       <h3>Unde Ne Gasesti</h3>
-      <div class="ci-item"><div class="ci-icon">📍</div><div class="ci-text"><h4>Adresa</h4><p>Bd. Ferdinand, Nr. 34, Constanta</p></div></div>
-      <div class="ci-item"><div class="ci-icon">📞</div><div class="ci-text"><h4>Telefon</h4><p>0735 500 540</p></div></div>
-      <div class="ci-item"><div class="ci-icon">🕐</div><div class="ci-text"><h4>Program</h4><p>L-V: 9:00-21:00 | S: 9:00-14:00</p></div></div>
-      <div class="ci-item"><div class="ci-icon">💬</div><div class="ci-text"><h4>WhatsApp</h4><p>Scrie-ne oricand pe 0735 500 540</p></div></div>
+      <div class="ci-item"><div class="ci-icon"><i data-lucide="map-pin" style="width:20px;height:20px"></i></div><div class="ci-text"><h4>Adresa</h4><p>Bd. Ferdinand, Nr. 34, Constanta</p></div></div>
+      <div class="ci-item"><div class="ci-icon"><i data-lucide="phone" style="width:20px;height:20px"></i></div><div class="ci-text"><h4>Telefon</h4><p>0735 500 540</p></div></div>
+      <div class="ci-item"><div class="ci-icon"><i data-lucide="clock" style="width:20px;height:20px"></i></div><div class="ci-text"><h4>Program</h4><p>L-V: 9:00-21:00 | S: 9:00-14:00</p></div></div>
+      <div class="ci-item"><div class="ci-icon"><i data-lucide="message-circle" style="width:20px;height:20px"></i></div><div class="ci-text"><h4>WhatsApp</h4><p>Scrie-ne oricand pe 0735 500 540</p></div></div>
     </div>
     <div class="contact-map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.5!2d28.6538!3d44.1765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDEwJzM1LjQiTiAyOMKwMzknMTMuNyJF!5e0!3m2!1sen!2sro!4v1" allowfullscreen loading="lazy"></iframe>
@@ -375,6 +376,7 @@ document.querySelectorAll('.faq-q').forEach(function(q){q.addEventListener('clic
 // Reveal
 var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}})},{threshold:0.1});
 document.querySelectorAll('.s-card,.stat,.test-card,.proc-step,.gallery-item,.gallery-wide,.faq-item,.ci-item').forEach(function(el){el.style.opacity='0';el.style.transform='translateY(30px)';el.style.transition='all .6s ease';obs.observe(el)});
+lucide.createIcons();
 </script>
 </body>
 </html>
